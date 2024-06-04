@@ -1,0 +1,32 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 355px;
+  background-color: white;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+  box-shadow: -3px 3px 19px -7px rgb(230, 230, 230);
+  overflow: auto;
+}
+.card-image {
+  height: 45%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 22px;
+  color: rgb(43, 43, 43);
+  height: 100%;
+}
+.card-title {
+  display: block;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+sub {
+  padding-top: 10px;
+  color: rgb(51, 14, 196);
+  float: right;
+}

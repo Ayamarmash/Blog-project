@@ -1,132 +1,21 @@
-@import url("./typography.css");
+@import url("typography.css");
+@import url("utils.css");
+@import url("blog.css");
+@import url("main-page.css");
+@import url("responsive.css");
+@import url("common.css");
+
 html,
 body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.page-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.header {
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  background-color: #2b76a8;
-  padding-left: 150px;
-  color: whitesmoke;
-  padding: 30px;
-}
-.header-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 50%;
-}
-.header-routes {
-  display: flex;
-  justify-content: space-evenly;
-  width: 30%;
-}
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-top: 30px;
-  background-color: #fcfbfb;
-  flex: 1;
-  gap: 30px;
-  padding: 40px;
-  padding-bottom: 30px;
-}
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #f1f1f1;
-  padding: 50px;
-  align-items: center;
-  > * {
-    width: fit-content;
-  }
-}
-.social-media {
-  display: flex;
-  padding-top: 15px;
-}
-.logo {
-  height: 40px;
-  width: 40px;
-  border-radius: 20px;
-  margin: 5px;
-}
-.card {
-  display: flex;
-  flex-direction: column;
-  width: 330px;
-  height: 355px;
-  background-color: white;
-  border: 1px solid #efefef;
-  border-radius: 4px;
-  box-shadow: -3px 3px 19px -7px rgb(230, 230, 230);
-  overflow: auto;
-}
-.card-image {
-  height: 45%;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  object-fit: cover;
-}
-.card-content {
-  padding: 22px;
-  color: rgb(43, 43, 43);
-  height: 100%;
-}
-.card-title {
-  display: block;
-  font-weight: 600;
-  padding-bottom: 15px;
-}
-sub {
-  padding-top: 10px;
-  color: rgb(51, 14, 196);
-  float: right;
-}
-
-p {
-  border-bottom: 1px solid #ededed;
-  padding-bottom: 10px;
-  font-size: 1rem;
-}
-.blog-grid {
-  display: grid;
-  grid-template-areas:
-    "blog blog image"
-    "blog2 blog2 image";
-}
-.blog-1 {
-  grid-area: blog;
-}
-.blog-2 {
-  grid-area: blog2;
-}
-.image {
-  width: 60%;
-  grid-area: image;
-}
-@media (max-width: 750px) {
-  .blog-grid {
-    grid-template-areas:
-      "blog blog"
-      "image image"
-      "blog2 blog2";
-  }
+a {
+    text-decoration: none;
 }
